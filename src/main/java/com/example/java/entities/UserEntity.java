@@ -20,6 +20,7 @@ import java.util.UUID;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class UserEntity {
+
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(
