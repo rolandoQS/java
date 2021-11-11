@@ -1,0 +1,48 @@
+package com.example.java.exception;
+
+public class ApiError{
+	private String error;
+	private String message;
+	private Integer status;
+
+
+	public ApiError(String error, String message, Integer status) {
+		super();
+		this.error = error;
+		this.message = message;
+		this.status = status;
+	}
+
+	public String getError() {
+		return this.error;
+	}
+
+	public void setError(String error) {
+		this.error = error;
+	}
+
+	public String getMessage() {
+		return this.message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public Integer getStatus() {
+		return this.status;
+	}
+
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
+
+	@Override
+	public String toString() {
+		return "ApiError{" +
+				"error='" + error + '\'' +
+				", message='" + message + '\'' +
+				", status=" + status +
+				'}';
+	}
+}
